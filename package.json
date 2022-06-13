@@ -1,0 +1,48 @@
+{
+  "name": "hexo-sitemap-generator",
+  "version": "1.0.2",
+  "description": "Sitemap generator plugin for Hexo",
+  "main": "index",
+  "scripts": {
+    "eslint": "eslint .",
+    "test": "mocha test/index.js",
+    "test-cov": "nyc --reporter=lcov npm run test"
+  },
+  "directories": {
+    "lib": "./lib"
+  },
+  "files": [
+    "lib",
+    "index.js",
+    "sitemap.xml",
+    "sitemap.txt",
+    "sitemap.html"
+  ],
+  "repository": "https://github.com/H52e5/hexo-sitemap-generator.git",
+  "keywords": [
+    "hexo",
+    "sitemap",
+    "seo",
+    "generator"
+  ],
+  "author": "H52e5",
+  "license": "MIT",
+  "dependencies": {
+    "hexo-util": "^2.1.0",
+    "micromatch": "^4.0.2",
+    "nunjucks": "^3.1.6"
+  },
+  "devDependencies": {
+    "camaro": "^6.1.0",
+    "chai": "^4.2.0",
+    "cheerio": "^0.22.0",
+    "eslint": "^8.0.0",
+    "eslint-config-hexo": "^5.0.0",
+    "hexo": "^6.0.0",
+    "mocha": "^9.1.2",
+    "nyc": "^15.0.0"
+  },
+  "engines": {
+    "node": ">=12.13.0"
+  }
+}
